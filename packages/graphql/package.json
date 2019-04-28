@@ -1,5 +1,5 @@
 {
-  "name": "graphql",
+  "name": "trydraw.today-graphql",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,5 +8,15 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "apollo-server": "^2.4.8",
+    "class-transformer": "^0.2.0",
+    "graphql": "^14.2.1",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^0.17.3"
+  }
 }
