@@ -16,7 +16,4 @@ phases:
       - echo Build started on `date`
   post_build:
     commands:
-      - echo Build completed on `date`
-  deploy:
-    commands:
       - lerna run deploy
