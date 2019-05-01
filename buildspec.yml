@@ -8,9 +8,9 @@ phases:
       - unzip terraform_0.11.11_linux_amd64.zip
       - sudo mv terraform /usr/local/bin/
       - terraform --version
+      - npm i -g lerna
       - npm install
       - lerna exec npm install
-      - npm i -g lerna
   build:
     commands:
       - echo Build started on `date`
