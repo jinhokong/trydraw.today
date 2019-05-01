@@ -3,6 +3,9 @@ version: 0.2
 phases:
   install:
     commands:
+      - aws configure set aws_access_key_id $aws_access_key_id --profile trydrawtoday
+      - aws configure set aws_secret_access_key $aws_secret_access_key --profile trydrawtoday
+      - aws configure set region ap-northeast-2 --profile trydrawtoday
       - sudo apt-get install unzip
       - wget https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip
       - unzip terraform_0.11.11_linux_amd64.zip

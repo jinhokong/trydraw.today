@@ -1,6 +1,6 @@
 provider "aws" {
   region  = "ap-northeast-2"
-  profile = "jinho"
+  profile = "trydrawtoday"
 }
 
 terraform {
