@@ -9,6 +9,7 @@ phases:
       - sudo mv terraform /usr/local/bin/
       - terraform --version
       - npm install
+      - npm i -g lerna
 
   build:
     commands:
@@ -16,3 +17,6 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+  deploy:
+    commands:
+      - lerna run deploy
