@@ -7,11 +7,12 @@ terraform {
   required_version = "= 0.11.11"
 
   backend "s3" {
-    key            = "./.terraform/terraform.tfstate"
-    region         = "ap-northeast-2"
-    acl            = "bucket-owner-full-control"
-    dynamodb_table = "Terraform-Lock"
-    bucket         = "trydrawtoday-tfstate"
+    key    = "./.terraform/terraform.tfstate"
+    region = "ap-northeast-2"
+    acl    = "bucket-owner-full-control"
+    bucket = "trydrawtoday-tfstate"
+
+    # dynamodb_table = "Terraform-Lock"
   }
 }
 
